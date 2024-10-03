@@ -20,16 +20,15 @@
             </button>
             <nav class="mobile-nav flex hide">
                 <button class="close-btn flex">
-                    <img src="./assets/imgs/close-bold-svgrepo-com.svg" alt="Close icon" srcset="">
+                    <img src="./assets/imgs/close-bold-svgrepo-com.svg" alt="Close icon" srcset="" class="close-btn">
                 </button>
                 <div class="mobile-links flex">
                 <a href="#hero">Inicio</a>
                 <a href="#aboutme">Sobre Mi</a>
                 <a href="#skills">Habilidades</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>                    
+                <a href="#projects">Proyectos</a>                 
                 </div>
-                <button class="contact-btn" id="contact">Contactar</button>
+                <a href="#5" >Contactar</a>
             </nav>
          </div>
          <nav class="desktop-nav">
@@ -37,7 +36,7 @@
             <a href="#aboutme">Sobre Mi</a>
             <a href="#skills">Habilidades</a>
             <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#5" class="contact">Contacto</a>
          </nav>
          <button class="theme-btn">
            <img src="./assets/imgs/moon-stars-svgrepo-com.svg" alt="Icono de luna" srcset="" class="moon-btn">
@@ -116,10 +115,10 @@
             <h2>Proyectos</h2>
             <p>Da clic en cualquier carta para ver un proyecto</p>
             <div class="card-options flex">
-                <a href="http://">Desarrollo</a>
-                <a href="http://">Wordpress</a>
+                <a href="http://" class="desaw-btn">Desarrollo</a>
+                <a href="http://" class="wordpress-btn">Wordpress</a>
             </div>
-            <div class="web-development-cards flex hide">
+            <div class="web-development-cards flex">
                 <div class="card flex">
                     <div class="overlay"></div>
                     <a href="https://jawlin-ecommerce-product-page.netlify.app/"><img src="./assets/imgs/1.png" alt="Ecommerce product page" srcset=""></a>
@@ -163,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wordpress-cards flex">
+            <div class="wordpress-cards flex hide">
                 <div class="card flex">
                     <div class="overlay"></div>
                     <a href="https://www.elempresarialmx.com"><img src="./assets/imgs/11.png" alt="El Empresarial" srcset=""></a>
@@ -208,13 +207,13 @@
                 </div>
             </div>
         </section>
-        <section class="contact-container flex" id="contact">
+        <section class="contact-container flex" id="5">
             <div class="content-container">
                 <h2>¿Tienes un proyecto?</h2>
                 <p>Me encantaría ayudarte, rellena el siguiente formulario</p>
             </div>
             <div class="form-container">
-                <form action="" method="post" class="flex">
+                <form action="" method="post" class="flex" id="contact">
                     <input type="text" name="name" id="name" placeholder="Nombre">
                     <input type="email" name="email" id="email" placeholder="Correo electrónico">
                     <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto"></textarea>
@@ -223,5 +222,9 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p>Gola</p>
+    </footer>
+    <script src="./app/app.js"></script>
 </body>
 </html>
