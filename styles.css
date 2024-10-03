@@ -112,8 +112,9 @@ header, .header-container {
 }
 
 .menu-hamburger img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
 
 .theme-btn img {
@@ -564,7 +565,12 @@ justify-content: center;
     flex-direction: column;
 }
 
+.name-input_container, .email-input_container, .textarea-container {
+    width: 100%;
+}
+
 input, textarea {
+    width: 100%;
     border-radius: 5px;
     color: #fff !important;
     background-color: #121016;
@@ -601,6 +607,13 @@ textarea {
     line-height: 1.7;
 }
 
+.error {
+    margin: 10px !important;
+    text-align: start !important;
+    font-size: 0.8rem;
+    color: #ff6f6f !important;
+}
+
 .form-container input[type="submit"] {
     background-color: #45287e;
     outline: none;
@@ -619,6 +632,12 @@ textarea {
 .form-container input[type="submit"]:hover {
     background-color: var(--black);
     color: var(--very-dark-gray);
+}
+
+.message {
+    font-size: 0.9rem !important;
+    color: #6cff77c7 !important;
+    margin: 0 0 20px !important;
 }
 
 @media screen and (min-width: 768px) {

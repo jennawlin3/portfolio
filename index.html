@@ -217,11 +217,20 @@
                 <p>Me encantaría ayudarte, rellena el siguiente formulario</p>
             </div>
             <div class="form-container">
-                <form method="post" class="flex" id="contact" action="https://formsubmit.co/jennacx7@gmail.com">
-                    <input type="text" name="name" id="name" placeholder="Nombre" required maxlength="50">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required maxlength="70">
-                    <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto" maxlength="400"></textarea required>
+                <form method="post" class="flex" id="contact" action="https://formsubmit.co/jennacx7@gmail.com" novalidate>
+                    <div class="name-input_container">
+                    <input type="text" name="name" id="name" placeholder="Nombre y Apellido" required maxlength="50">     <p class="error hide">Por favor, ingresa los datos solicitados</p>           
+                    </div>
+                    <div class="email-input_container">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required maxlength="70">       <p class="error hide">Por favor, ingresa los datos solicitados</p>            
+                    </div>
+                    <div class="textarea-container">
+                    <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto" maxlength="400"></textarea required>                 <p class="error hide">Por favor, ingresa los datos solicitados</p>               
+                    </div>
                     <input type="submit" class="submit" value="Enviar">
+                    <p class="message hide">
+                        Envíando...
+                    </p>
                 </form>
             </div>
         </section>

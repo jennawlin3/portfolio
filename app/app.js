@@ -10,7 +10,19 @@ const $webDevCards = d.querySelector(".web-development-cards");
 const $wordpressCards = d.querySelector(".wordpress-cards");
 const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
 const otherMediaQuery = window.matchMedia("(max-width: 1023px)");
-const $submitBtn = d.querySelector(".submit")
+const $form = d.querySelector("#contact");
+const $nameInput = d.querySelector("input[type='text'");
+const $emailInput = d.querySelector("input[type='email'");
+const $textarea = d.querySelector("textarea");
+const $errorMsgs = d.querySelectorAll(".error");
+const $message = d.querySelector(".message");
+
+let validName = false;
+let validEmail = false;
+let validMessage = false;
+
+const namePattern = /^\s*([A-Za-z]{1,}([\.,] |[-']| ))+[A-Za-z]+\.?\s*$/;
+const emailPattern = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}/;
 
 desktopMediaQuery.addEventListener("change", (e) => {
     console.log("hola");
@@ -66,3 +78,77 @@ $wordpressBtn.addEventListener("click", (e) => {
     $webDevCards.classList.add("hide");
     $wordpressCards.classList.remove("hide");
 });
+
+$nameInput.addEventListener("input", (e) => {
+    if(e) {
+    if($nameInput.value.length === 0) {
+        validName = false;
+        $errorMsgs[0].classList.remove("hide");
+    } else {
+        if(namePattern.test($nameInput.value)) {
+            validName = true;
+            $errorMsgs[0].classList.add("hide");
+        } else {
+            validName = false;       
+            $errorMsgs[0].classList.remove("hide");
+        }
+    }        
+    }
+});
+
+$emailInput.addEventListener("input", (e) => {
+    if(e) {
+    if($emailInput.value.length === 0) {
+        validEmail = false;
+        $errorMsgs[1].classList.remove("hide");
+    } else {
+        if(emailPattern.test($emailInput.value)) {
+            validEmail = true;
+            $errorMsgs[1].classList.add("hide");
+        } else {
+            validEmail = false;       
+            $errorMsgs[1].classList.remove("hide");
+        }
+    }        
+    }
+});
+
+$textarea.addEventListener("input", (e) => {
+    if(e) {
+    if($textarea.value.length === 0) {
+        validMessage = false;
+        $errorMsgs[2].classList.remove("hide");
+    } else {
+        if($textarea.value.length > 20) {
+            validMessage = true;
+            $errorMsgs[2].classList.add("hide");
+        } else {
+            validMessage = false;       
+            $errorMsgs[2].classList.remove("hide");
+        }
+    }        
+    }
+});
+
+$form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    console.log(validName, validEmail, validMessage);
+
+    if(validName === false) {
+        $errorMsgs[0].classList.remove("hide");
+    };
+
+    if(validEmail === false ) {
+        $errorMsgs[1].classList.remove("hide");
+    };
+
+    if(validMessage === false) {
+        $errorMsgs[2].classList.remove("hide");
+    }
+
+    if(validEmail === true && validName === true && validMessage === true) {
+        $form.submit();
+        $message.classList.remove("hide");
+    }
+})
