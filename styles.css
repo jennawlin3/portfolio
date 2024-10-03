@@ -485,6 +485,7 @@ justify-content: center;
     width: 80%;
     height: 390px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .card .overlay {
@@ -517,6 +518,11 @@ justify-content: center;
     opacity: .9;
     border-radius: 0 0 10px 10px;
     bottom: -10px;
+}
+
+.card-info p {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .card h3 {
