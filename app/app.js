@@ -10,6 +10,7 @@ const $webDevCards = d.querySelector(".web-development-cards");
 const $wordpressCards = d.querySelector(".wordpress-cards");
 const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
 const otherMediaQuery = window.matchMedia("(max-width: 1023px)");
+const $submitBtn = d.querySelector(".submit")
 
 desktopMediaQuery.addEventListener("change", (e) => {
     console.log("hola");
@@ -66,4 +67,6 @@ $wordpressBtn.addEventListener("click", (e) => {
     $wordpressCards.classList.remove("hide");
 });
 
-
+$submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+})
