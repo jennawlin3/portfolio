@@ -505,7 +505,7 @@ justify-content: center;
     height: 20%;
     opacity: .9;
     border-radius: 0 0 10px 10px;
-    bottom: 0;
+    bottom: -10px;
 }
 
 .card h3 {
@@ -659,13 +659,12 @@ textarea {
     }    
 
     .web-development-cards .card, .wordpress-cards .card {
-        height: 460px;
         margin-bottom: -60px;
     }
 
     .card-info {
         height: 20%;
-        top: 70%;
+        bottom: 30px;
     }
 
     .contact-container {
