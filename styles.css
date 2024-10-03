@@ -406,7 +406,7 @@ figcaption {
 .skills-wrapper {
     gap: 30px 0;
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     align-items: center;
     width: 90%;
 }
@@ -504,8 +504,8 @@ justify-content: center;
     background: #000;
     height: 20%;
     opacity: .9;
-    top: 80%;
     border-radius: 0 0 10px 10px;
+    bottom: 0;
 }
 
 .card h3 {
@@ -536,7 +536,7 @@ justify-content: center;
 
 .form-container {
     border-radius: 0 0 10px 10px;
-    padding: 0px 40px;
+    padding: 0px 30px;
 }
 
 .contact-container, form {
@@ -655,10 +655,11 @@ textarea {
         grid-template-columns: repeat(2, minmax(350px, 1fr));
         gap: 0;
         justify-items: center;
+        margin: auto;
     }    
 
     .web-development-cards .card, .wordpress-cards .card {
-        height: 420px;
+        height: 460px;
         margin-bottom: -60px;
     }
 
