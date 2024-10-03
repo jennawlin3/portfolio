@@ -66,7 +66,3 @@ $wordpressBtn.addEventListener("click", (e) => {
     $webDevCards.classList.add("hide");
     $wordpressCards.classList.remove("hide");
 });
-
-$submitBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-})
