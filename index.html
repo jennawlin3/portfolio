@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenn Acosta - Portafolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="flex" id="header">
+        <div class="header-container flex">
+         <div class="mobile-nav_container">
+            <button class="menu-hamburger">
+                <img src="./assets/imgs/bars-svgrepo-com.svg" alt="Menu icon" srcset="" class="menu-btn">
+            </button>
+            <nav class="mobile-nav flex hide">
+                <button class="close-btn flex">
+                    <img src="./assets/imgs/close-bold-svgrepo-com.svg" alt="Close icon" srcset="">
+                </button>
+                <div class="mobile-links flex">
+                <a href="#hero">Inicio</a>
+                <a href="#aboutme">Sobre Mi</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>                    
+                </div>
+                <button class="contact-btn" id="contact">Contactar</button>
+            </nav>
+         </div>
+         <nav class="desktop-nav">
+            <a href="#hero">Inicio</a>
+            <a href="#aboutme">Sobre Mi</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+         </nav>
+         <button class="theme-btn">
+           <img src="./assets/imgs/moon-stars-svgrepo-com.svg" alt="Icono de luna" srcset="" class="moon-btn">
+          <img src="./assets/imgs/sun-2-svgrepo-com.svg" alt="Icono de sol" srcset="" class="sun-btn hide">
+         </button>
+        </div>
+    </header>
+    <main class="container">
+        <div class="overlay hide"></div>
+        <section class="hero-container flex" id="hero">
+            <article class="content-container">
+                <p>¡Hola!</p>
+                <h1>Soy desarrolladora y <span class="color">diseñadora web</span></h1>
+                <p>Mi nombre es Jenn, me encanta programar, bienvenido a mi portafolio</p>
+                <a href="#projects" class="flex">Ver Proyectos</a>
+                <div class="social-media flex">
+                    <button class="linkedin-btn">         <img src="./assets/imgs/linkedin-icon-svgrepo-com.svg" alt="LinkedIn Icon" srcset=""></button>
+                    <button>
+                    <img src="./assets/imgs/behance-svgrepo-com.svg" alt="Behance Icon" srcset="">    
+                    </button>
+                    <button>
+                    <img src="./assets/imgs/github-svgrepo-com.svg" alt="Github Icon" srcset="">    
+                    </button>
+                </div>
+            </article>
+            <div class="img-container">
+                <img src="./assets/imgs/cartoon.png" alt="Caricatura" srcset="">
+            </div>
+        </section>
+        <section class="aboutme flex" id="aboutme">
+            <div class="illustration-container">
+                <img src="./assets/imgs/laptop-svgrepo-com.svg" alt="Ilustracion" srcset="">
+            </div>
+            <article class="aboutme-content flex">
+                <h2>Acerca de mí</h2>
+                <p>Tengo 24 años, soy de Venezuela, desde chica he tenido pasión por el mundo de las computadoras, no fue hasta que conocí el mundo de la programación que encontré algo que me fascinaba, el hecho de combinar el ingenio, la lógica y la creatividad para resolver problemas.</p> 
+                <p>Soy estudiante de la carrera de Ingeniería en Computación en la Universidad de Carabobo. También me apasiona la música.</p>
+            </article>
+        </section>
+        <section class="skills-container" id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skills-wrapper">
+                    <picture>
+                    <img src="./assets/imgs/html5-logo-svgrepo-com.svg" alt="Html5 Icon" srcset="" class="skill">
+                        <figcaption>HTML</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/css-svgrepo-com.svg" alt="CSS3 Icon" srcset="" class="skill">
+                        <figcaption>CSS</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/js-svgrepo-com.svg" alt="Javascript Icon" srcset="" class="skill">
+                        <figcaption>JavaScript</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/adobe-ps-svgrepo-com.svg" alt="Photoshop Icon" srcset="" class="skill">
+                        <figcaption>Photoshop</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/canva-svgrepo-com.svg" alt="Canva Icon" srcset="" class="skill">
+                        <figcaption>Canva</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/git-svgrepo-com.svg" alt="Git Icon" srcset="" class="skill">
+                        <figcaption>Git</figcaption>
+                    </picture>
+                    <picture>
+                        <img src="./assets/imgs/wordpress-svgrepo-com.svg" alt="Wordpress Icon" srcset="" class="skill">
+                        <figcaption>Wordpress</figcaption>
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="projects-container flex" id="projects">
+            <h2>Proyectos</h2>
+            <p>Da clic en cualquier carta para ver un proyecto</p>
+            <div class="card-options flex">
+                <a href="http://">Desarrollo</a>
+                <a href="http://">Wordpress</a>
+            </div>
+            <div class="web-development-cards flex hide">
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-ecommerce-product-page.netlify.app/"><img src="./assets/imgs/1.png" alt="Ecommerce product page" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Página de producto</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-manage-landing-page.netlify.app/"><img src="./assets/imgs/2img.png" alt="Manage landing page" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Landing Page</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-interactive-comments-section.netlify.app/"><img src="./assets/imgs/3img.png" alt="Comentarios interactivos" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Comentarios interactivos</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-tip-calculator.netlify.app/"><img src="./assets/imgs/4.png" alt="Calculadora de propinas" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Calculadora de propinas</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-agency-landing-page.netlify.app/"><img src="./assets/imgs/5.png" alt="Sunnyside landing page" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Landing Page</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-product-list-with-cart.netlify.app/"><img src="./assets/imgs/6.png" alt="App de carrito" srcset=""></a>
+                    <div class="card-info">
+                    <h3>App de Carrito</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="wordpress-cards flex">
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://www.elempresarialmx.com"><img src="./assets/imgs/11.png" alt="El Empresarial" srcset=""></a>
+                    <div class="card-info">
+                    <h3>El Empresarial MX</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://www.granerocuauhtemoc.com"><img src="./assets/imgs/10.png" alt="App de carrito" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Granero Cuauhtémoc</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-product-list-with-cart.netlify.app/"><img src="./assets/imgs/12.png" alt="CIES" srcset=""></a>
+                    <div class="card-info">
+                    <h3>CIES</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-product-list-with-cart.netlify.app/"><img src="./assets/imgs/9.png" alt="Ortodental" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Ortodental</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-product-list-with-cart.netlify.app/"><img src="./assets/imgs/7.png" alt="Fraeya Store" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Fraeya Store</h3>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="overlay"></div>
+                    <a href="https://jawlin-product-list-with-cart.netlify.app/"><img src="./assets/imgs/8.png" alt="Pizza Haus" srcset=""></a>
+                    <div class="card-info">
+                    <h3>Pizza Haus</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-container flex" id="contact">
+            <div class="content-container">
+                <h2>¿Tienes un proyecto?</h2>
+                <p>Me encantaría ayudarte, rellena el siguiente formulario</p>
+            </div>
+            <div class="form-container">
+                <form action="" method="post" class="flex">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                    <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
