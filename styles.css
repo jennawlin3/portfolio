@@ -37,6 +37,10 @@ body {
     background-color: var(--black);
 }
 
+.hide {
+    display: none !important;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -90,7 +94,7 @@ header {
 }
 
 header.active {
-    background-color: var(--very-dark-gray);
+    background-color: #141414;
 }
 
 .header-container {
@@ -306,7 +310,8 @@ button {
     font-weight: 500;
 }
 
-.content-container a {
+.see-projects {
+    display: flex;
     background-color: var(--dark-purple);
     width: 70%;
     align-items: center;
@@ -318,14 +323,11 @@ button {
     font-weight: 600;
     font-size: 0.9rem;
     border-radius: 15px;
-}
-
-.content-container a {
     text-transform: uppercase;
     font-size: 0.8rem;
 }
 
-.content-container a:hover {
+.see-projects:hover {
     background-color: var(--gray-hover);
     box-shadow: 3px 3px 1px #262626;
 }
@@ -333,25 +335,27 @@ button {
 .social-media {
     align-items: center;
     justify-content: flex-end;
+    gap: 10px;
     margin-top: 30px;
 }
 
-.social-media button {
+.social-media a {
     background-color: transparent;
     cursor: pointer;
     position: relative;
+    width: 40px;
 }
 
-.social-media button img {
+.social-media a img {
     width: 40px;
     height: 40px;
 }
 
-.social-media button:hover {
+.social-media a:hover {
     transform: scale(0.8);
 }
 
-.social-media button::before {
+.social-media a::before {
     content: "";
     position: absolute;
     background-color: #f7f7f7;
@@ -780,7 +784,7 @@ textarea {
         font-size: 2.5rem;
     }
 
-    .hero-container .content-container a {
+    .see-projects {
         width: 200px;
     }
 
@@ -901,12 +905,3 @@ textarea {
 }
 
 
-
-
-
-
-
-
-.hide {
-    display: none;
-}

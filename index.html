@@ -38,7 +38,7 @@
             <a href="#projects">Proyectos</a>
             <a href="#5" class="contact">Contacto</a>
          </nav>
-         <button class="theme-btn">
+         <button class="theme-btn hide">
            <img src="./assets/imgs/moon-stars-svgrepo-com.svg" alt="Icono de luna" srcset="" class="moon-btn">
           <img src="./assets/imgs/sun-2-svgrepo-com.svg" alt="Icono de sol" srcset="" class="sun-btn hide">
          </button>
@@ -51,15 +51,15 @@
                 <p>¡Hola!</p>
                 <h1>Soy desarrolladora y <span class="color">diseñadora web</span></h1>
                 <p>Mi nombre es Jenn, me encanta programar, bienvenido a mi portafolio</p>
-                <a href="#projects" class="flex">Ver Proyectos</a>
+                <a href="#projects" class="flex see-projects">Ver Proyectos</a>
                 <div class="social-media flex">
-                    <button class="linkedin-btn">         <img src="./assets/imgs/linkedin-icon-svgrepo-com.svg" alt="LinkedIn Icon" srcset=""></button>
-                    <button>
-                    <img src="./assets/imgs/behance-svgrepo-com.svg" alt="Behance Icon" srcset="">    
-                    </button>
-                    <button>
+                    <a href="https://www.linkedin.com/in/jenn-acosta7/" target="_blank" class="linkedin-btn">         <img src="./assets/imgs/linkedin-icon-svgrepo-com.svg" alt="LinkedIn Icon" srcset=""></a>
+                    <a href="https://www.behance.net/jennawlin3" target="_blank">
+                    <img alt="Behance Icon" srcset="" src="./assets/imgs/behance-svgrepo-com.svg">    
+                    </a>
+                    <a href="https://github.com/jennawlin3" target="_blank">
                     <img src="./assets/imgs/github-svgrepo-com.svg" alt="Github Icon" srcset="">    
-                    </button>
+                    </a>
                 </div>
             </article>
             <div class="img-container">
@@ -217,10 +217,10 @@
                 <p>Me encantaría ayudarte, rellena el siguiente formulario</p>
             </div>
             <div class="form-container">
-                <form action="" method="post" class="flex" id="contact">
-                    <input type="text" name="name" id="name" placeholder="Nombre">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                    <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto"></textarea>
+                <form action="" method="post" class="flex" id="contact" action="https://formsubmit.co/jennacx7@gmail.com">
+                    <input type="text" name="name" id="name" placeholder="Nombre" required maxlength="50">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required maxlength="70">
+                    <textarea name="subject" id="message" cols="30" rows="10" placeholder="Comenta acerca de tu proyecto" maxlength="400"></textarea required>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
