@@ -88,7 +88,8 @@ window.addEventListener("scroll", (e) => {
     }
 
     if(positionContact < screenSize) {
-        $contact.style.animation = "grow 1s ease-in"
+        $contact.style.animation = "appear 2s ease-in";
+        $contact.style.opacity = "1";
     }
 });
 
