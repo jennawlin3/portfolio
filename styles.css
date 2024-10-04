@@ -372,6 +372,58 @@ button {
     display: none;
 }
 
+.aboutme, .skill {
+    opacity: 0;
+}
+
+.hero-container {
+    animation: moveDown 2s ease;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growBig {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .aboutme-content {
     flex-direction: column;
     align-items: center;
@@ -704,6 +756,11 @@ textarea {
 
     .illustration-container img {
         width: 80%;
+        cursor: pointer;
+    }
+
+    .illustration-container img:hover {
+        transform: rotate(-15deg);
     }
 
     .skills-wrapper {
@@ -721,6 +778,10 @@ textarea {
 
     .web-development-cards .card, .wordpress-cards .card {
         margin-bottom: -60px;
+    }
+
+    .wordpress-cards {
+        gap: 50px;
     }
 
     .card-info {
@@ -860,7 +921,7 @@ textarea {
 
     .contact-container {
         margin-top: 150px;
-        height: 500px;
+        height: 550px;
     }
 
     .contact-container .content-container {
@@ -891,12 +952,16 @@ textarea {
         grid-area: email;
     }
 
-    textarea {
+    .textarea-container {
         grid-area: textarea;
     }
 
     input[type="submit"] {
         grid-area: button;
+    }
+
+    .card-info p {
+        margin-top: 30px;
     }
 }
 

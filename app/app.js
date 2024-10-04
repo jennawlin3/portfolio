@@ -17,6 +17,14 @@ const $textarea = d.querySelector("textarea");
 const $errorMsgs = d.querySelectorAll(".error");
 const $message = d.querySelector(".message");
 
+// ANIMATIONS INTERSECTION OBSERVER
+const $hero = d.querySelector(".hero-container");
+const $aboutMe = d.querySelector(".aboutme");
+const $skills = d.querySelector(".skills-container");
+const $skillsImgs = d.querySelectorAll(".skill")
+const $cards = d.querySelector(".projects-container");
+const $contact = d.querySelector(".contact-container");
+
 let validName = false;
 let validEmail = false;
 let validMessage = false;
@@ -47,13 +55,46 @@ d.addEventListener("DOMContentLoaded", (e) => {
 })
 
 window.addEventListener("scroll", (e) => {
-    console.log("hola");
     if(window.scrollY >= 100) {
         $header.classList.add("active");
     } else {
         $header.classList.remove("active");
     }
+
+    //ANIMATIONS
+    let positionAboutMe = $aboutMe.getBoundingClientRect().top;
+    let positionSkills = $skills.getBoundingClientRect().top;
+    console.log(positionSkills);
+    let positionCards = $cards.getBoundingClientRect().top;
+    let positionContact = $contact.getBoundingClientRect().top;
+
+    let screenSize = window.innerHeight/3.5;
+
+    if(positionAboutMe < screenSize) {
+        $aboutMe.style.animation = "appear 2s ease-in";
+        $aboutMe.style.opacity = "1";
+    }
+
+    if(positionSkills < screenSize) {
+        $skillsImgs.forEach(img => {
+            img.style.animation = "grow 2s ease-in";
+            img.style.opacity = "1";
+        });
+    }
+
+    if(positionCards < screenSize) {
+        $cards.style.animation 
+        = "growBig 2s ease-in";
+    }
+
+    if(positionContact < screenSize) {
+        $contact.style.animation = "grow 1s ease-in"
+    }
 });
+
+    // ANIMATIONS
+    function callback(entries) {
+    }
 
 $menuIcon.addEventListener("click", (e) => {
     $mobileNav.classList.remove("hide");
