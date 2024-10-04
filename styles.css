@@ -372,7 +372,7 @@ button {
     display: none;
 }
 
-.aboutme, .skill, .contact-container {
+.aboutme, .skill, .projects-container, .contact-container {
     opacity: 0;
 }
 
@@ -796,6 +796,20 @@ textarea {
         padding: 0;
         margin-top: 100px;
         background-color: var(--very-dark-gray);
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .contact-container::before {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: url("./assets/imgs/footer.png");
+        background-size: contain;
+        bottom: 0;
+        left: -20px;
+        transform: rotate(90deg);
     }
 
     .contact-container .content-container {
@@ -841,7 +855,7 @@ textarea {
     .desktop-nav a {
         color: var(--light-gray);
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         height: 20px;
     }
     

@@ -85,6 +85,7 @@ window.addEventListener("scroll", (e) => {
     if(positionCards < screenSize) {
         $cards.style.animation 
         = "growBig 2s ease-in";
+        $cards.style.opacity = "1";
     }
 
     if(positionContact < screenSize) {
