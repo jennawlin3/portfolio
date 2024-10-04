@@ -21,7 +21,6 @@ const $message = d.querySelector(".message");
 const $hero = d.querySelector(".hero-container");
 const $aboutMe = d.querySelector(".aboutme");
 const $skills = d.querySelector(".skills-container");
-const $skillsImgs = d.querySelectorAll(".skill")
 const $cards = d.querySelector(".projects-container");
 const $contact = d.querySelector(".contact-container");
 
@@ -76,10 +75,8 @@ window.addEventListener("scroll", (e) => {
     }
 
     if(positionSkills < screenSize) {
-        $skillsImgs.forEach(img => {
-            img.style.animation = "grow 2s ease-in";
-            img.style.opacity = "1";
-        });
+            $skills.style.animation = "grow 2s ease-in";
+            $skills.style.opacity = "1";
     }
 
     if(positionCards < screenSize) {
