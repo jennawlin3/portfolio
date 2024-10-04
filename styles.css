@@ -532,7 +532,7 @@ justify-content: center;
 .web-development-cards, .wordpress-cards {
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .card {

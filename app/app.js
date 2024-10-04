@@ -68,7 +68,7 @@ window.addEventListener("scroll", (e) => {
     let positionCards = $cards.getBoundingClientRect().top;
     let positionContact = $contact.getBoundingClientRect().top;
 
-    let screenSize = window.innerHeight/3.5;
+    let screenSize = window.innerHeight/4;
 
     if(positionAboutMe < screenSize) {
         $aboutMe.style.animation = "appear 2s ease-in";
